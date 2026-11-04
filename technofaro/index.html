@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Techno Faro | Reformas y obras en Sevilla</title>
+<meta name="description" content="Reformas integrales y parciales, rehabilitación y asistencia técnica en Sevilla. Más de 25 años de experiencia a pie de obra. Pida su presupuesto.">
+<meta name="robots" content="noindex">
+<style>
+:root{--navy:#14213d;--ink:#1d2433;--mag:#c2188a;--mag-d:#9b106c;--bg:#fafaf8;--card:#fff;--line:#e6e4df;--muted:#5b6475}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);background:var(--bg)}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+.banner{background:#fff4c2;color:#5a4a00;font-size:14px;text-align:center;padding:8px 16px;border-bottom:1px solid #eadb8a}
+header.nav{position:sticky;top:0;background:rgba(250,250,248,.95);backdrop-filter:blur(6px);border-bottom:1px solid var(--line);z-index:5}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:64px}
+.logo{font-weight:800;letter-spacing:.02em;color:var(--navy);text-decoration:none;font-size:20px}
+.logo span{color:var(--mag)}
+.nav nav{display:flex;gap:22px;font-size:15px}
+.nav nav a{text-decoration:none;color:var(--muted)}
+.nav nav a:hover{color:var(--navy)}
+.btn{display:inline-block;background:var(--mag);color:#fff;text-decoration:none;font-weight:700;padding:13px 22px;border-radius:10px;border:0;cursor:pointer;font-size:16px}
+.btn:hover{background:var(--mag-d)}
+.btn.ghost{background:transparent;color:var(--navy);border:2px solid var(--navy)}
+.btn.ghost:hover{background:var(--navy);color:#fff}
+.hero{background:linear-gradient(135deg,var(--navy),#22345f);color:#fff;padding:72px 0 80px}
+.hero h1{font-size:clamp(32px,5vw,54px);line-height:1.1;margin:0 0 18px;max-width:16em}
+.hero p{font-size:19px;max-width:34em;color:#dfe5f3;margin:0 0 28px}
+.hero .cta{display:flex;flex-wrap:wrap;gap:12px}
+.hero .btn.ghost{color:#fff;border-color:#fff}.hero .btn.ghost:hover{background:#fff;color:var(--navy)}
+.stats{display:flex;flex-wrap:wrap;gap:28px;margin-top:44px;border-top:1px solid rgba(255,255,255,.2);padding-top:24px}
+.stats div{font-size:14px;color:#c9d2e8}.stats b{display:block;font-size:22px;color:#fff}
+section{padding:64px 0}
+h2{font-size:clamp(26px,3.4vw,36px);line-height:1.2;margin:0 0 10px;color:var(--navy)}
+.lead{color:var(--muted);max-width:40em;margin:0 0 34px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:24px}
+.card h3{margin:0 0 6px;font-size:19px;color:var(--navy)}
+.card p{margin:0;color:var(--muted);font-size:15.5px}
+.ico{width:42px;height:42px;border-radius:10px;background:#f6e4ef;color:var(--mag);display:grid;place-items:center;font-weight:800;margin-bottom:14px}
+.alt{background:#f1efe9}
+.steps{counter-reset:s;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.step{counter-increment:s;padding-left:0}
+.step:before{content:counter(s);display:grid;place-items:center;width:38px;height:38px;border-radius:50%;background:var(--navy);color:#fff;font-weight:700;margin-bottom:12px}
+.step h3{margin:0 0 4px;font-size:18px;color:var(--navy)}.step p{margin:0;color:var(--muted);font-size:15.5px}
+.proj{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.ph{aspect-ratio:4/3;border-radius:12px;background:repeating-linear-gradient(45deg,#e9e6df,#e9e6df 12px,#efede7 12px,#efede7 24px);display:grid;place-items:center;text-align:center;color:var(--muted);font-size:14px;padding:12px;border:1px dashed #cfcbc0}
+.contact{background:var(--navy);color:#fff}
+.contact h2{color:#fff}.contact .lead{color:#c9d2e8}
+.cgrid{display:grid;grid-template-columns:1fr 1fr;gap:36px}
+@media(max-width:760px){.cgrid{grid-template-columns:1fr}.nav nav{display:none}}
+.contact a.big{display:block;font-size:26px;font-weight:800;text-decoration:none;margin:4px 0 14px}
+form{display:grid;gap:12px}
+label{font-size:14px;color:#c9d2e8}
+input,textarea{width:100%;padding:12px 14px;border-radius:8px;border:1px solid #3a4b78;background:#1b2b50;color:#fff;font:inherit}
+input:focus,textarea:focus{outline:2px solid var(--mag);border-color:var(--mag)}
+.note{font-size:13px;color:#9fb0d6}
+footer{background:#0d1530;color:#9fb0d6;font-size:14px;padding:26px 0}
+footer b{color:#fff}
+.float{position:fixed;right:16px;bottom:16px;display:flex;flex-direction:column;gap:10px;z-index:6}
+.float a{background:#25d366;color:#073b1a;font-weight:700;text-decoration:none;border-radius:999px;padding:12px 18px;box-shadow:0 6px 18px rgba(0,0,0,.25);font-size:15px}
+:focus-visible{outline:3px solid var(--mag);outline-offset:2px}
+</style>
+</head>
+<body>
+<div class="banner">Propuesta de diseño preparada por Pedro Gil para Techno Faro. No es la web oficial.</div>
+<header class="nav"><div class="wrap">
+<a class="logo" href="#">TECHNO<span>FARO</span></a>
+<nav><a href="#servicios">Servicios</a><a href="#proceso">Cómo trabajamos</a><a href="#obras">Obras</a><a href="#contacto">Contacto</a></nav>
+<a class="btn" href="tel:+34618955986">Llamar</a>
+</div></header>
+
+<main>
+<section class="hero"><div class="wrap">
+<h1>Reformas y obras en Sevilla, planificadas y entregadas en plazo</h1>
+<p>Reformas integrales y parciales, rehabilitación y dirección de obra con un equipo con más de 25 años a pie de obra. Un único interlocutor de principio a fin.</p>
+<div class="cta"><a class="btn" href="#contacto">Pedir presupuesto</a><a class="btn ghost" href="https://wa.me/34618955986">Escribir por WhatsApp</a></div>
+<div class="stats"><div><b>+25 años</b>de experiencia en obra</div><div><b>Viviendas, locales y comunidades</b>tipos de cliente</div><div><b>Obra y asistencia técnica</b>proyecto, dirección y ejecución</div></div>
+</div></section>
+
+<section id="servicios"><div class="wrap">
+<h2>Qué hacemos</h2>
+<p class="lead">Desde cambiar un baño hasta rehabilitar un edificio. Usted cuenta lo que necesita y nos ocupamos del resto.</p>
+<div class="grid">
+<div class="card"><div class="ico">1</div><h3>Reformas integrales</h3><p>Viviendas, locales comerciales y comunidades de vecinos, con todos los oficios coordinados.</p></div>
+<div class="card"><div class="ico">2</div><h3>Reformas parciales</h3><p>Baños, cocinas, pladur, escayolas, pintura, impermeabilizaciones y arreglo de fachadas.</p></div>
+<div class="card"><div class="ico">3</div><h3>Instalaciones</h3><p>Electricidad, fontanería, climatización, gas y energía solar.</p></div>
+<div class="card"><div class="ico">4</div><h3>Rehabilitación y fachadas</h3><p>Trabajos de alpinismo, cubiertas, tratamientos contra la humedad en muros de carga.</p></div>
+<div class="card"><div class="ico">5</div><h3>Carpintería y acabados</h3><p>Aluminio, vidrio, madera, cerrajería, pulidos y abrillantados.</p></div>
+<div class="card"><div class="ico">6</div><h3>Asistencia técnica</h3><p>Proyectos, dirección de obra, coordinación de seguridad y salud, informes y peritajes.</p></div>
+</div></div></section>
+
+<section id="proceso" class="alt"><div class="wrap">
+<h2>Cómo trabajamos</h2>
+<p class="lead">Un proceso claro para que sepa en cada momento qué se hace y cuánto cuesta.</p>
+<div class="steps">
+<div class="step"><h3>Visita y consulta</h3><p>Vemos el espacio y escuchamos qué necesita.</p></div>
+<div class="step"><h3>Presupuesto cerrado</h3><p>Partidas claras y plazos acordados por escrito.</p></div>
+<div class="step"><h3>Ejecución coordinada</h3><p>Un responsable de obra supervisa cada oficio.</p></div>
+<div class="step"><h3>Entrega y garantía</h3><p>Revisamos con usted el resultado y respondemos del trabajo.</p></div>
+</div></div></section>
+
+<section id="obras"><div class="wrap">
+<h2>Obras realizadas</h2>
+<p class="lead">Aquí se mostrarán sus mejores obras, con fotos de antes y después.</p>
+<div class="proj">
+<div class="ph">Reforma integral de vivienda<br>(foto de su obra)</div>
+<div class="ph">Baño y cocina<br>(foto de su obra)</div>
+<div class="ph">Fachada y rehabilitación<br>(foto de su obra)</div>
+</div></div></section>
+
+<section id="contacto" class="contact"><div class="wrap cgrid">
+<div>
+<h2>Cuéntenos su obra</h2>
+<p class="lead">Respondemos con un presupuesto sin compromiso.</p>
+<a class="big" href="tel:+34618955986">618 955 986</a>
+<p>Avda. Eduardo Dato, 43<br>41018 Sevilla</p>
+<p><a href="https://wa.me/34618955986">Escribir por WhatsApp</a></p>
+</div>
+<form onsubmit="event.preventDefault();this.querySelector('button').textContent='Formulario de ejemplo en esta propuesta'">
+<div><label for="n">Nombre</label><input id="n" name="nombre" autocomplete="name" required></div>
+<div><label for="t">Teléfono</label><input id="t" name="telefono" type="tel" autocomplete="tel" required></div>
+<div><label for="m">¿Qué obra necesita?</label><textarea id="m" name="mensaje" rows="4"></textarea></div>
+<button class="btn" type="submit">Solicitar presupuesto</button>
+<p class="note">Al enviar acepta nuestra política de privacidad. Sus datos se usarán solo para responder a su consulta.</p>
+</form>
+</div></section>
+</main>
+
+<footer><div class="wrap"><b>TECHNO FARO, SL</b> · Avda. Eduardo Dato, 43, Sevilla · Propuesta de diseño de Pedro Gil, no oficial. Textos tomados de la web pública de la empresa. Fotos pendientes de aportar por el cliente.</div></footer>
+<div class="float"><a href="https://wa.me/34618955986" aria-label="Escribir por WhatsApp">WhatsApp</a></div>
+</body></html>
